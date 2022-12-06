@@ -1,0 +1,43 @@
+<script>
+  function pulaLinha() {
+    document.write('<br>')
+    document.write('<br>')
+  }
+
+  function mostrar(frase) {
+    document.write(frase)
+    pulaLinha()
+  }
+
+  var vitoria = parseInt(prompt('Números de vitórias.'))
+  var empate = parseInt(prompt('Números de empates.'))
+  var derrota = parseInt(prompt('Números de derrotas.'))
+
+  var pontos = vitoria * 3 + empate
+
+  mostrar('Seus pontos são' + ' ' + pontos + '!')
+
+  mostrar(
+    'Vitória = ' +
+      vitoria +
+      '  ' +
+      'Empates = ' +
+      empate +
+      '  ' +
+      'Derrotas = ' +
+      derrota
+  )
+
+  //Condições
+  //se pontos for maior que 15
+  if (pontos > 15) {
+    //exibe essa frase pois a condição é verdadeira
+    mostrar('Seu time está melhor que o ano passado.')
+  }
+  if (pontos < 10) {
+    mostrar('Seu time está pior que o ano passado.')
+  }
+  if (pontos == 10) {
+    mostrar('Seu time está igual que o ano passado.')
+  }
+</script>
