@@ -1,0 +1,17 @@
+<script>
+  function pulaLinha() {
+    document.write('<br>')
+  }
+
+  function mostrar(frase) {
+    document.write(frase)
+    pulaLinha()
+  }
+
+  var idadeQuandoTemFilho = 28
+  var anoAtual = 2022
+  var totalGeracao = (anoAtual - 1500) / idadeQuandoTemFilho
+
+  mostrar(Math.round(totalGeracao) + ' ' + 'gerações.')
+  //mostrar(totalGeracao)//resultado com dízima
+</script>
