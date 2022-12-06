@@ -1,0 +1,19 @@
+<script>
+  function pulaLinha() {
+    document.write('<br>') //instrução da função
+  }
+
+  //function com parâmetro -> (frase) que recebe a string e exibe pelo document.write(frase)
+  function mostra(frase) {
+    document.write(frase) //
+    pulaLinha()
+  }
+
+  var ano = 2022
+  mostra('Josy nasceu em' + ' ' + (ano - 34) + ' ' + '!')
+  mostra('Ela tem 2 gatinhas, mia e clarinha')
+  mostra('É professora de empreendedorismo.')
+  //document.write('Josy nasceu em ' + (ano - 34) + '!')
+  //pulaLinha() //ativa a function que tem a tag html <br>, pular 1 linha.
+  //document.write('Ela tem 2 gatinhas, mia e clarinha')
+</script>
