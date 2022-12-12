@@ -1,0 +1,63 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+
+<!-- FUNÇÃO COM 2 PARÂMENTROS
+  <script>
+  function mostrar(frase) {
+    document.write(frase)
+    document.write('<br>')
+  }
+
+  function calculaImc(peso, altura) {
+    var imc = peso / (altura * altura) + 1
+    mostrar('O imc calculado é ' + imc)
+  }
+  calculaImc(98, 1.75)
+  calculaImc(67, 1.7)
+</script>-->
+
+<!-- RETORNANDO UM VALOR 
+<script>
+  //função retornando valor
+  function mostrar(frase) {
+    document.write(frase)
+    document.write('<br>')
+  }
+
+  function calculaImc(peso, altura) {
+    var imc = peso / (altura * altura)
+    return imc //irá retornar o valor do imc para imcTito e imcJosy, de acordo com os valores passados
+  }
+  var imcTito = calculaImc(98, 1.75)
+  var imcJosy = calculaImc(67, 1.7)
+  mostrar('O valor do IMC do Thiago é' + ' ' + imcTito)
+  mostrar('O valor do IMC do Thiago é' + ' ' + imcJosy)
+</script>
+-->
+
+<!--INTERAÇÃO COM O USUÁRIO UTILIZANDO PROMPT()-->
+<script>
+  function mostrar(frase) {
+    document.write(frase)
+    document.write('<br>')
+  }
+
+  function calculaImc(peso, altura) {
+    return peso / (altura * altura) //irá retornar o valor do imc, para var imc.
+  }
+
+  var peso = prompt('Informe seu peso') // função que captura a entrada do usuário.
+  var altura = prompt('Informe sua altura')
+
+  var imc = calculaImc(peso, altura)
+  mostrar('O valor do IMC do é' + ' ' + imc)
+
+  if (imc < 18.5) {
+    mostrar('Você está abaixo do recomendado')
+  }
+  if (imc > 35) {
+    mostrar('Você está acima do recomendado')
+  }
+  if (imc >= 18.5 && imc <= 35) {
+    mostrar('Você está dentro do recomendado')
+  }
+</script>

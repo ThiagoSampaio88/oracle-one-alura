@@ -1,0 +1,23 @@
+<meta charset="UTF-8" />
+
+<script>
+  function pulaLinha() {
+    document.write('<br>')
+    document.write('<br>')
+  }
+
+  function mostrar(frase) {
+    document.write(frase)
+    pulaLinha()
+  }
+
+  var anoCopa = 1930
+  //var ano = pegar a data atual
+  var ano = prompt('Digite a data limite.')
+  while (anoCopa <= ano) {
+    mostrar(' Teve copa em' + ' ' + anoCopa)
+    anoCopa = anoCopa + 4
+  }
+
+  mostrar('A próxima copa será daqui a 4 anos !')
+</script>

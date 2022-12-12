@@ -1,0 +1,25 @@
+<script>
+  function pulaLinha() {
+    document.write('<br><br>')
+  }
+
+  function mostrar(frase) {
+    document.write(frase)
+    pulaLinha()
+  }
+  // Recebe e armazena o valor digitado.
+  var totalFamiliares = parseInt(prompt('Quantidade de familiares?'))
+
+  var numero = 1 // var para dar a condição de repetição no while().
+
+  var totalIdades = 0 // essa variável receberá o valor digitado no prompt e somará com o próximo valor digitado e dividido pelo número de familiares.
+
+  while (numero <= totalFamiliares) {
+    var idade = parseInt(prompt('Informe idade do familia.'))
+    totalIdades = totalIdades + idade
+    numero++
+  }
+  var mediaIdades = totalIdades / totalFamiliares // deixar com 2 casa decimais.
+  mostrar('A média da idade da família é... ' + mediaIdades)
+  mostrar('fim')
+</script>
