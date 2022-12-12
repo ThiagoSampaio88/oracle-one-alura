@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+<canvas width="600" height="400"></canvas
+><!-- CRIA UM QUADRO PARA DESENHO.-->
+
+<script>
+  var tela = document.querySelector('canvas')
+  var pincel = tela.getContext('2d') //TIPO DE PINCEL QUE SERÁ USADO.
+
+  pincel.fillStyle = 'lightgray' //COR DO PREENCHIMENTO DO CANVAS.
+  pincel.fillRect(0, 0, 600, 400) //EIXOS "x" E "y", E TAMANHO DO CANVAS 600/400.
+
+  pincel.fillStyle = 'green'
+  pincel.fillRect(0, 0, 200, 400) //eixo x = 0 e y= 0. 200/400 retângulo
+
+  pincel.fillStyle = 'red'
+  pincel.fillRect(400, 0, 200, 400) //x inicia em 400, y = 0, retâgulo 200/400
+
+  /*DESENHO DE UM TRIÂNGULO*/
+  pincel.fillStyle = 'yellow'
+  pincel.beginPath() //INICIA CAMINHO DO PINCEL- OUTRO LOCAL DO CANVAS
+
+  pincel.moveTo(300, 200) //NOVO PONTO DE PARTIDA DO PINCEL EIXO "x=300 e Y=200"
+  pincel.lineTo(200, 400) //MOVIMENTAÇÃO DO PICENL PARA EIXO "x=200 e Y=400"
+  pincel.lineTo(400, 400)
+  pincel.fill() //PREENCHER O DESENHO COM A COR DO pincel.fillStyle = "cor"
+
+  /*DESENHO DO CÍRCULO*/
+  pincel.fillStyle = 'blue'
+  pincel.beginPath()
+  pincel.arc(300, 200, 50, 0, 2 * 3.14)
+  pincel.fill()
+</script>
